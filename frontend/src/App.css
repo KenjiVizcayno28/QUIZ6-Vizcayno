@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --wood-bark: #4b3124;
+  --wood-amber: #b56e3a;
+  --wood-sand: #f4ecdf;
+  --wood-forest: #35594a;
+  --wood-cream: #fffaf3;
+}
+
+body {
+  font-family: var(--bs-body-font-family);
+  background:
+    radial-gradient(circle at top left, rgba(181, 110, 58, 0.16), transparent 30%),
+    linear-gradient(180deg, #f7efe3 0%, #f2eadc 52%, #ece1d0 100%);
+  color: var(--wood-bark);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main {
+  flex: 1;
+}
+
+a {
+  color: inherit;
+}
